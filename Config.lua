@@ -2,15 +2,28 @@ Config = {}
 
 Config.UseBlip = true                      -- [true to enable the blip | false disables the blip]
 
-Config.Location = {
-    Coords = vector4(-279.14, 2206.02, 129.85 - 1.00, 67.35),
-    ModelName = "a_m_y_epsilon_02",
-    ModelHash = 0xAA82FF9B,
-    SetBlipSprite = 303,
-    SetBlipDisplay = 6,
-    SetBlipScale = 0.85,
-    SetBlipColour = 40,
-    BlipName = "BlackMarket Dealer"
+Config.Locations = {
+    {
+        Coords = vector4(-279.14, 2206.02, 129.85 - 1.00, 67.35),
+        ModelName = "a_m_y_epsilon_02",
+        ModelHash = 0xAA82FF9B,
+        SetBlipSprite = 303,
+        SetBlipDisplay = 6,
+        SetBlipScale = 0.85,
+        SetBlipColour = 40,
+        BlipName = "BlackMarket Dealer"
+    },
+    {
+        Coords = vector4(100.0, -1000.0, 30.0, 0.0),
+        ModelName = "a_m_y_epsilon_02",
+        ModelHash = 0xAA82FF9B,
+        SetBlipSprite = 303,
+        SetBlipDisplay = 6,
+        SetBlipScale = 0.85,
+        SetBlipColour = 40,
+        BlipName = "BlackMarket Dealer"
+    },
+    -- Add more locations here
 }
 
 Config.Icons = {
