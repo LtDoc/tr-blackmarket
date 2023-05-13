@@ -28,9 +28,11 @@ CreateThread(function()
         AddTextComponentSubstringPlayerName(Config.Location.BlipName)
         EndTextCommandSetBlipName(BlackMarketBlip)
     end
-    local Coords = Config.Location.Coords
-    local PedHash = Config.Location.ModelHash
-    local PedModel = Config.Location.ModelName
+    local locations = Config.Locations
+    local location = locations[math.random(#locations)]
+    local Coords = location.Coords
+    local PedHash = location.ModelHash
+    local PedModel = location.ModelName
     if not DoesEntityExist(TRClassicBlackMarketPed) then
         RequestModel( GetHashKey(PedModel) )
         while ( not HasModelLoaded( GetHashKey(PedModel) ) ) do
